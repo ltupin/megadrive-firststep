@@ -1,0 +1,8 @@
+```
+git clone git@github.com:Stephane-D/SGDK.git && cd SGDK
+docker build -t sgdk:$(git describe --abbrev=0 --tags) .
+docker image ls 
+cd sample/sonic && rm -rf out
+docker run --rm -v "$PWD":/src -u $(id -u):$(id -g) sgdk:$(git describe --abbrev=0 --tags)
+```
+# Download, unzip https://www.bannister.org/software/gplus.htm and load out/rom.bin file

@@ -1,0 +1,13 @@
+# To build with "Genesis Code" plugin on vscode https://marketplace.visualstudio.com/items?itemName=zerasul.genesis-code
+# We need marsdev :
+# https://github.com/andwn/marsdev/blob/master/doc/install_macos.md
+brew install java
+
+# If you need to have openjdk first in your PATH, run:
+#   echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+
+# For compilers to find openjdk you may need to set:
+#   export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+brew install libpng
+brew install autoconf automake boost
